@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Fraction Calculator - EverythingTools</title>
+
+    <meta
+        name="description"
+        content="Add, subtract, multiply and divide fractions with the free EverythingTools fraction calculator."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            EverythingTools
+        </a>
+
+        <a href="index.html#tools" class="header-link">
+            All tools
+        </a>
+
+    </header>
+
+
+
+    <main>
+
+        <section class="calculator-page">
+
+
+            <a href="index.html" class="back-link">
+                ← Back to all tools
+            </a>
+
+
+            <p class="small-label">
+                CALCULATOR
+            </p>
+
+
+            <h1>
+                Fraction Calculator
+            </h1>
+
+
+            <p class="calculator-intro">
+                Add, subtract, multiply or divide fractions quickly.
+            </p>
+
+
+
+            <!-- CALCULATOR -->
+
+            <div class="calculator-card">
+
+
+                <div class="fraction-calculation">
+
+
+                    <div class="fraction-input">
+
+                        <label>
+                            First fraction
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="numerator-one"
+                            value="1"
+                            step="1"
+                        >
+
+
+                        <div class="fraction-line"></div>
+
+
+                        <input
+                            type="number"
+                            id="denominator-one"
+                            value="2"
+                            step="1"
+                        >
+
+                    </div>
+
+
+
+                    <select
+                        id="fraction-operation"
+                        class="fraction-operation"
+                        aria-label="Operation"
+                    >
+
+                        <option value="add">
+                            +
+                        </option>
+
+                        <option value="subtract">
+                            −
+                        </option>
+
+                        <option value="multiply">
+                            ×
+                        </option>
+
+                        <option value="divide">
+                            ÷
+                        </option>
+
+                    </select>
+
+
+
+                    <div class="fraction-input">
+
+                        <label>
+                            Second fraction
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="numerator-two"
+                            value="3"
+                            step="1"
+                        >
+
+
+                        <div class="fraction-line"></div>
+
+
+                        <input
+                            type="number"
+                            id="denominator-two"
+                            value="4"
+                            step="1"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="result-box fraction-result">
+
+                    <p>
+                        Result
+                    </p>
+
+
+                    <div
+                        class="fraction-display"
+                        id="fraction-result"
+                    >
+
+                        <span>5</span>
+
+                        <div class="fraction-result-line"></div>
+
+                        <span>4</span>
+
+                    </div>
+
+
+                    <strong id="mixed-result">
+                        1 1/4
+                    </strong>
+
+
+                    <span id="fraction-message">
+                        Simplified result
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- EXPLANATION -->
+
+            <section class="calculator-info">
+
+                <h2>
+                    How it works
+                </h2>
+
+
+                <p>
+                    Enter two fractions and choose an operation.
+                    The calculator will work out the result and
+                    simplify the fraction automatically.
+                </p>
+
+
+                <div class="formula">
+                    Fraction → Operation → Simplified fraction
+                </div>
+
+
+                <p>
+                    For example, 1/2 + 3/4 equals 5/4,
+                    which is also 1 1/4 as a mixed number.
+                </p>
+
+            </section>
+
+
+
+            <!-- RELATED -->
+
+            <section class="related-tools">
+
+                <h2>
+                    You might also like
+                </h2>
+
+
+                <div class="related-grid">
+
+
+                    <a href="percentage.html">
+
+                        <strong>
+                            Percentage Calculator
+                        </strong>
+
+                        <span>
+                            Calculate percentages quickly.
+                        </span>
+
+                    </a>
+
+
+                    <a href="unit.html">
+
+                        <strong>
+                            Unit Converter
+                        </strong>
+
+                        <span>
+                            Convert common units quickly.
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                EverythingTools
+            </strong>
+
+            <p>
+                Simple tools for everyday life.
+            </p>
+
+        </div>
+
+
+        <p>
+            © 2026 EverythingTools
+        </p>
+
+    </footer>
+
+
+
+    <script src="fraction.js"></script>
+
+</body>
+
+</html>

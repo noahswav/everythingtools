@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tip Calculator - EverythingTools</title>
+
+    <meta
+        name="description"
+        content="Calculate tips, total bills and how much each person should pay with the free EverythingTools tip calculator."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            EverythingTools
+        </a>
+
+        <a href="index.html#tools" class="header-link">
+            All tools
+        </a>
+
+    </header>
+
+
+
+    <main>
+
+        <section class="calculator-page">
+
+
+            <a href="index.html" class="back-link">
+                ← Back to all tools
+            </a>
+
+
+            <p class="small-label">
+                CALCULATOR
+            </p>
+
+
+            <h1>
+                Tip Calculator
+            </h1>
+
+
+            <p class="calculator-intro">
+                Calculate your tip, total bill and split the cost.
+            </p>
+
+
+
+            <!-- CALCULATOR -->
+
+            <div class="calculator-card">
+
+
+                <div class="calculator-inputs">
+
+
+                    <div class="input-group">
+
+                        <label for="bill">
+                            Bill amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="bill"
+                            value="100"
+                            min="0"
+                            step="any"
+                            placeholder="100"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="tip-percent">
+                            Tip
+                        </label>
+
+                        <div class="input-with-symbol">
+
+                            <input
+                                type="number"
+                                id="tip-percent"
+                                value="15"
+                                min="0"
+                                step="any"
+                                placeholder="15"
+                            >
+
+                            <span>%</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="people">
+                            Number of people
+                        </label>
+
+                        <input
+                            type="number"
+                            id="people"
+                            value="1"
+                            min="1"
+                            step="1"
+                            placeholder="1"
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- RESULTS -->
+
+                <div class="result-list">
+
+
+                    <div class="result-item">
+
+                        <span>
+                            Tip amount
+                        </span>
+
+                        <strong id="tip-amount">
+                            $15.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <span>
+                            Total bill
+                        </span>
+
+                        <strong id="total-bill">
+                            $115.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-item result-highlight">
+
+                        <span>
+                            Per person
+                        </span>
+
+                        <strong id="per-person">
+                            $115.00
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- EXPLANATION -->
+
+            <section class="calculator-info">
+
+                <h2>
+                    How to calculate a tip
+                </h2>
+
+
+                <p>
+                    Multiply the bill amount by the tip percentage
+                    to find the tip. Then add the tip to the bill.
+                </p>
+
+
+                <div class="formula">
+                    Bill × (Tip % ÷ 100) = Tip
+                </div>
+
+
+                <p>
+                    For example, a $100 bill with a 15% tip means:
+                </p>
+
+
+                <div class="example">
+
+                    $100 × 0.15 = $15 tip
+
+                    <br><br>
+
+                    $100 + $15 = <strong>$115 total</strong>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- RELATED -->
+
+            <section class="related-tools">
+
+                <h2>
+                    You might also like
+                </h2>
+
+
+                <div class="related-grid">
+
+
+                    <a href="discount.html">
+
+                        <strong>
+                            Discount Calculator
+                        </strong>
+
+                        <span>
+                            Calculate sale prices and savings.
+                        </span>
+
+                    </a>
+
+
+                    <a href="percentage.html">
+
+                        <strong>
+                            Percentage Calculator
+                        </strong>
+
+                        <span>
+                            Calculate percentages quickly.
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                EverythingTools
+            </strong>
+
+            <p>
+                Simple tools for everyday life.
+            </p>
+
+        </div>
+
+
+        <p>
+            © 2026 EverythingTools
+        </p>
+
+    </footer>
+
+
+
+    <script src="tip.js"></script>
+
+</body>
+
+</html>

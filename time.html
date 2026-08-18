@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Time Calculator - EverythingTools</title>
+
+    <meta
+        name="description"
+        content="Add or subtract hours and minutes with the free EverythingTools time calculator."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            EverythingTools
+        </a>
+
+        <a href="index.html#tools" class="header-link">
+            All tools
+        </a>
+
+    </header>
+
+
+
+    <main>
+
+        <section class="calculator-page">
+
+
+            <a href="index.html" class="back-link">
+                ← Back to all tools
+            </a>
+
+
+            <p class="small-label">
+                CALCULATOR
+            </p>
+
+
+            <h1>
+                Time Calculator
+            </h1>
+
+
+            <p class="calculator-intro">
+                Add or subtract hours and minutes quickly and easily.
+            </p>
+
+
+
+            <!-- CALCULATOR -->
+
+            <div class="calculator-card">
+
+
+                <div class="time-operation">
+
+                    <div class="input-group">
+
+                        <label for="hours-one">
+                            First time
+                        </label>
+
+                        <div class="time-inputs">
+
+                            <input
+                                type="number"
+                                id="hours-one"
+                                value="2"
+                                min="0"
+                                step="1"
+                                placeholder="Hours"
+                            >
+
+                            <span>
+                                hours
+                            </span>
+
+                            <input
+                                type="number"
+                                id="minutes-one"
+                                value="30"
+                                min="0"
+                                max="59"
+                                step="1"
+                                placeholder="Minutes"
+                            >
+
+                            <span>
+                                minutes
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="operation-selector">
+
+                        <label for="operation">
+                            Operation
+                        </label>
+
+                        <select id="operation">
+
+                            <option value="add">
+                                Add
+                            </option>
+
+                            <option value="subtract">
+                                Subtract
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label for="hours-two">
+                            Second time
+                        </label>
+
+                        <div class="time-inputs">
+
+                            <input
+                                type="number"
+                                id="hours-two"
+                                value="1"
+                                min="0"
+                                step="1"
+                                placeholder="Hours"
+                            >
+
+                            <span>
+                                hours
+                            </span>
+
+                            <input
+                                type="number"
+                                id="minutes-two"
+                                value="45"
+                                min="0"
+                                max="59"
+                                step="1"
+                                placeholder="Minutes"
+                            >
+
+                            <span>
+                                minutes
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="result-box time-result">
+
+                    <p>
+                        Result
+                    </p>
+
+                    <strong id="time-result">
+                        4 hours 15 minutes
+                    </strong>
+
+                    <span id="time-total">
+                        255 minutes total
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- EXPLANATION -->
+
+            <section class="calculator-info">
+
+                <h2>
+                    How it works
+                </h2>
+
+
+                <p>
+                    Enter two amounts of time and choose whether you want
+                    to add or subtract them.
+                </p>
+
+
+                <div class="formula">
+                    Convert to minutes → Calculate → Convert back to hours
+                </div>
+
+
+                <p>
+                    For example, 2 hours 30 minutes plus 1 hour 45 minutes
+                    equals 4 hours 15 minutes.
+                </p>
+
+            </section>
+
+
+
+            <!-- RELATED -->
+
+            <section class="related-tools">
+
+                <h2>
+                    You might also like
+                </h2>
+
+
+                <div class="related-grid">
+
+
+                    <a href="date.html">
+
+                        <strong>
+                            Date Difference
+                        </strong>
+
+                        <span>
+                            Find the number of days between two dates.
+                        </span>
+
+                    </a>
+
+
+                    <a href="age.html">
+
+                        <strong>
+                            Age Calculator
+                        </strong>
+
+                        <span>
+                            Calculate your exact age.
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                EverythingTools
+            </strong>
+
+            <p>
+                Simple tools for everyday life.
+            </p>
+
+        </div>
+
+
+        <p>
+            © 2026 EverythingTools
+        </p>
+
+    </footer>
+
+
+
+    <script src="time.js"></script>
+
+</body>
+
+</html>
